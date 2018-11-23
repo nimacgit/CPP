@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1399912655 source:d:\programming\c++\codeblock\hellinet\c6\main.cpp
+	<iostream>
+	<vector>
+

@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html dir="rtl"><head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+* {
+	font-size: small;
+}
+.header, .sample-data {
+	width: 100%;
+}
+.header td {
+	border: 3px solid black;
+	text-align: center;
+	font-family: 'Droid Arabic Naskh';
+}
+.sample-data td {
+	padding-left: 10px;
+	border-top: 3px solid black;
+	border-left: 3px solid black;
+	text-align: left;
+	vertical-align: top;
+}
+.part {
+	text-align: justify;
+}
+.part, h1, h2, h3, th {
+	font-family: 'Droid Arabic Naskh';
+}
+span.math {
+	direction: ltr !IMPORTANT;
+}
+.figure {
+	width: 100%;
+	text-align: center;
+}
+
+.figure .caption {
+	display:none;
+}
+
+.figure img {
+	margin: 0 auto;
+}
+	</style>
+</head>
+<body>
+
+
+<table class="header">
+	<tbody><tr>
+		<td rowspan="3"><h1><p>اسکیت (SKATE)</p>
+</h1></td>
+		<td>دوره تابستان المپیاد کامپیوتر ۱۳۹۵
+
+روز ۱۶</td>
+	</tr>
+	<tr>
+		<td>محدودیت زمان: 2 ثانیه</td>
+	</tr>
+	<tr>
+		<td>محدودیت حافظه: 256 مگابایت</td>
+	</tr>
+</tbody></table>
+<div class="part">
+<p>
+ علی پس از برنده شدن جایزه‌ی خوش‌شانس ترین آدم دنیا بسیار ثروتمند شد و 
+یک باشگاه اسکیت به نام باشگاه اسکیت‌بازان جوان تاسیس کرد. در این باشگاه 
+تعدادی اسکیت وجود دارد که اعضای باشگاه فقط از این اسکیت‌ها استفاده 
+می‌کنند. اسکیت ها <span class="math"><em>n</em></span> اندازه متفاوت از <span class="math">1</span> تا <span class="math"><em>n</em></span> دارند. هر عضو باشگاه نیز اندازه پای مشخصی دارد، ولی اسکیت‌بازان آستانه‌ی <span class="math"><em>d</em></span> برای اندازه اسکیت خود دارند، یعنی اگر اسکیت‌بازی اندازه پایش <span class="math"><em>r</em></span> باشد می‌تواند اسکیت‌های بین اندازه <span class="math"><em>r</em></span> تا <span class="math"><em>r</em> + <em>d</em></span> (شامل هر دو) را پایش کند.
+</p><p>
+برای تامین نیازهای باشگاه، علی خوش‌شانس از هر سایز <span class="math"><em>k</em></span>
+ جفت اسکیت خریده‌است. زمان که می‌گذرد افراد به باشگاه می‌آیند، یا بعضی 
+از افرادی که در باشگاهند از باشگاه بیرون می‌روند. علی نگران است که 
+لحظه‌ای پیش نیاید که تعداد کافی برای اسکیت پا کردن اعضا وجود نداشته باشد
+ و شهرتش خدشه دار شود. فرض کنید اول هیچ کسی در باشگاه نیست. 
+</p><p>
+علی به شما دنباله‌ای از m رخداد به قالب پیش رو می‌دهد:‌ <span class="math"><em>x</em></span> نفر با اندازه‌ی پا <span class="math"><em>r</em></span>
+ وارد/خارج باشگاه می‌شوند و می‌خواهد بداند بعد از هر رخداد، آیا اسکیت‌ها
+ برای افراد درون باشگاه کافی و مناسب هستند؟‌ (همه بتوانند یک اسکیت 
+پایشان بکنند) توجه کنید که او صرفا می‌خواهد بداند این‌کار شدنی است یا 
+نه، یعنی در این لحظه اگر همه‌ی افراد بخواهند اسکیت پایشان کنند، 
+می‌توانند یا خیر.
+</p>
+
+</div>
+<h2>ورودی</h2>
+<div class="part">
+<p>
+در خط اول چهار عدد <span class="math"><em>n</em></span> و <span class="math"><em>m</em></span> و <span class="math"><em>k</em></span> و <span class="math"><em>d</em></span> آمده‌است که به ترتیب بیانگر اندازه‌های مختلف، تعداد رخداد ها، تعداد جفت‌اسکیت از هر اندازه و آستانه اندازه‌ی اسکیت هستند.
+</p><p>
+ هر یک از <span class="math"><em>m</em></span> خط بعدی بیانگر یک رخداد هستند. در هر یک از این خطوط دو عدد <span class="math"><em>r</em></span> و <span class="math"><em>x</em></span> آمده‌اند، اگر <span class="math">0 ≤ <em>x</em></span>، یعنی <span class="math"><em>x</em></span> نفر با اندازه پا <span class="math"><em>r</em></span> وارد باشگاه می‌شوند و اگر <span class="math"><em>x</em></span> منفی باشد یعنی <span class="math"><em>x</em></span> نفر با اندازه پا <span class="math"><em>r</em></span> از باشگاه خارج می‌شوند. همچنین تضمین می‌شود رخداد ها معتبر هستند.</p>
+<ul>
+<li><p><span dir="ltr" class="math">1 ≤ <em>n</em> ≤ 2 × 10<sup>5</sup></span></p></li>
+<li><p><span dir="ltr" class="math">1 ≤ <em>m</em> ≤ 5 × 10<sup>5</sup></span></p></li>
+<li><p><span dir="ltr" class="math">1 ≤ <em>k</em> ≤ 10<sup>9</sup></span></p></li>
+<li><p><span dir="ltr" class="math">0 ≤ <em>d</em> ≤ <em>n</em> − 1</span></p></li>
+<li><p><span dir="ltr" class="math">1 ≤ <em>r</em> ≤ <em>n</em> − <em>d</em></span></p></li>
+<li><p><span dir="ltr" class="math">-10<sup>9</sup> ≤ <em>x</em> ≤ 10<sup>9</sup></span></p></li>
+</ul>
+<p></p>
+
+</div>
+<h2>خروجی</h2>
+<div class="part">
+<p> 
+به ازای هر رخداد اگر پس از این رخداد، به هر شخص در باشگاه می‌شد اسکیت مناسبی نسبت داد YES چاپ کنید در غیر این‌صورت NO چاپ کنید.
+</p>
+</div>
+
+<table class="sample-data" cellspacing="10px">
+	<tbody><tr>
+		<th>ورودی نمونه</th>
+		<th>خروجی نمونه</th>
+	</tr>
+	
+	<tr>
+		<td><pre dir="ltr">4 4 2 1
+1 3
+2 3
+3 3
+2 -1
+</pre></td>
+		<td><pre dir="ltr">YES
+YES
+NO
+YES
+</pre></td>
+	</tr>
+	
+	
+	
+	
+</tbody></table>
+
+<div class="part">
+	
+
+</div>
+
+
+
+
+
+
+</body></html>

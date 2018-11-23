@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html dir="rtl"><head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+* {
+	font-size: small;
+}
+.header, .sample-data {
+	width: 100%;
+}
+.header td {
+	border: 3px solid black;
+	text-align: center;
+	font-family: 'Droid Arabic Naskh';
+}
+.sample-data td {
+	padding-left: 10px;
+	border-top: 3px solid black;
+	border-left: 3px solid black;
+	text-align: left;
+	vertical-align: top;
+}
+.part {
+	text-align: justify;
+}
+.part, h1, h2, h3, th {
+	font-family: 'Droid Arabic Naskh';
+}
+span.math {
+	direction: ltr !IMPORTANT;
+}
+.figure {
+	width: 100%;
+	text-align: center;
+}
+
+.figure .caption {
+	display:none;
+}
+
+.figure img {
+	margin: 0 auto;
+}
+	</style>
+</head>
+<body>
+
+
+<table class="header">
+	<tbody><tr>
+		<td rowspan="3"><h1><p>حرکت در جدول (GRIDMOVE)</p>
+</h1></td>
+		<td>دوره تابستان المپیاد کامپیوتر ۱۳۹۵
+
+روز ۱۱</td>
+	</tr>
+	<tr>
+		<td>محدودیت زمان: 1 ثانیه</td>
+	</tr>
+	<tr>
+		<td>محدودیت حافظه: 256 مگابایت</td>
+	</tr>
+</tbody></table>
+<div class="part">
+<p>در جدول حرکت کنید. جدول <span class="math" dir="ltr"><em>n</em> × <em>m</em></span> و شامل کاراکتر‌های <code>0</code> تا <code>9</code> و <code>&lt;</code> و <code>&gt;</code> و <code>^</code> و <code>v</code> و <code>/</code> و <code>\</code> و <code>O</code> و <code>L</code> و <code>R</code> است.</p>
+<p>ارقام <code>0</code> تا <code>9</code> به معنی پرش مستقیم از چند خانه‌ی متوالی است. در صورت رسیدن به <code>/</code> و <code>\</code> نیز باید به جهت مربوطه چرخید. <code>O</code> سنگ است، برگردید. <code>L</code> و <code>R</code> نیز به معنی چرخش ۹۰ درجه به چپ یا راست است.</p>
+
+</div>
+<h2>ورودی</h2>
+<div class="part">
+<p>سطر اول وروردی شامل دو عدد طبیعی <span class="math" dir="ltr"><em>n</em></span> و <span class="math" dir="ltr"><em>m</em></span> است. در <span class="math" dir="ltr"><em>n</em></span> سطر بعدی هر کدام <span class="math" dir="ltr"><em>m</em></span> کاراکتر آمده است که کاراکتر <span class="math" dir="ltr"><em>j</em></span>ام سطر <span class="math" dir="ltr"><em>i</em></span>ام خانه <span class="math" dir="ltr">(<em>i</em>, <em>j</em>)</span> جدول را نشان می‌دهد. در سطر آخر سه عدد طبیعی <span class="math" dir="ltr"><em>x</em></span> و <span class="math" dir="ltr"><em>y</em></span> و <span class="math" dir="ltr"><em>d</em><em>i</em><em>r</em></span> آمده که نشان می‌دهد ما حرکت‌مان را با ورود به خانه <span class="math" dir="ltr">(<em>x</em>, <em>y</em>)</span> جدول از جهت <span class="math" dir="ltr"><em>d</em><em>i</em><em>r</em></span> شروع می‌کنیم. جهت‌های بالا، چپ، پایین و راست به ترتیب با علامت‌های <code>^</code> و <code>&gt;</code> و <code>v</code> و ‍<code>&lt;</code> نشان داده می‌شوند.</p>
+<ul>
+<li><span class="math" dir="ltr">1 ≤ <em>n</em>, <em>m</em> ≤ 1000</span></li>
+<li><span class="math" dir="ltr">0 ≤ <em>x</em> &lt; <em>n</em></span></li>
+<li><span class="math" dir="ltr">0 ≤ <em>y</em> &lt; <em>m</em></span></li>
+<li><span class="math" dir="ltr"><em>d</em><em>i</em><em>r</em> = </span> ‍<code>‍‍^</code> <span class="math" dir="ltr"><em>o</em><em>r</em> &lt; <em>o</em><em>r</em></span> <code>v</code> <span class="math" dir="ltr"><em>o</em><em>r</em> &gt; </span></li>
+</ul>
+
+</div>
+<h2>خروجی</h2>
+<div class="part">
+<p>در تنها سطر خروجی در صورتی که از جدول بیرون نمی‌روید عبارت <code>loop</code> و در غیر این‌صورت مختصات اولین خانه بیرون جدول که می‌روید را چاپ کنید.</p>
+
+</div>
+
+<table class="sample-data" cellspacing="10px">
+	<tbody><tr>
+		<th>ورودی نمونه</th>
+		<th>خروجی نمونه</th>
+	</tr>
+	
+	<tr>
+		<td><pre dir="ltr">3 4
+v...
+LRRL
+.O&gt;L
+0 3 &lt;
+</pre></td>
+		<td><pre dir="ltr">-1 2
+</pre></td>
+	</tr>
+	
+	
+	<tr>
+		<td><pre dir="ltr">4 4
+0&gt;0v
+&gt;0v0
+0^&lt;0
+^00&lt;
+1 0 &gt;
+</pre></td>
+		<td><pre dir="ltr">loop
+</pre></td>
+	</tr>
+	
+	
+	
+	
+</tbody></table>
+
+<div class="part">
+	
+
+</div>
+
+
+
+
+
+
+</body></html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html dir="rtl"><head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+* {
+	font-size: small;
+}
+.header, .sample-data {
+	width: 100%;
+}
+.header td {
+	border: 3px solid black;
+	text-align: center;
+	font-family: 'Droid Arabic Naskh';
+}
+.sample-data td {
+	padding-left: 10px;
+	border-top: 3px solid black;
+	border-left: 3px solid black;
+	text-align: left;
+	vertical-align: top;
+}
+.part {
+	text-align: justify;
+}
+.part, h1, h2, h3, th {
+	font-family: 'Droid Arabic Naskh';
+}
+span.math {
+	direction: ltr !IMPORTANT;
+}
+.figure {
+	width: 100%;
+	text-align: center;
+}
+
+.figure .caption {
+	display:none;
+}
+
+.figure img {
+	margin: 0 auto;
+}
+	</style>
+</head>
+<body>
+
+
+<table class="header">
+	<tbody><tr>
+		<td rowspan="3"><h1><p>شهردار (mayor)</p>
+</h1></td>
+		<td>دوره تابستان المپیاد کامپیوتر ۱۳۹۵
+
+روز ۱۵</td>
+	</tr>
+	<tr>
+		<td>محدودیت زمان: 1 ثانیه</td>
+	</tr>
+	<tr>
+		<td>محدودیت حافظه: 256 مگابایت</td>
+	</tr>
+</tbody></table>
+<div class="part">
+<p>
+پویان شهردار شهری با
+<span class="math" dir="ltr"><em>n</em></span>
+تقاطع است که گراف آن به شکل درخت است و خیابان‌های آن هر یک مسافتی دارند.
+ پویان برای بررسی میزان رفاه شهروندان از آقا پارسا خواسته‌است تا به 
+سوالات او پاسخ بدهد. او از آقا پارسا
+<span class="mat" dir="ltr"><em>m</em></span>
+سوال می‌پرسد و در سوال 
+<span class="mat" dir="ltr"><em>i</em></span>
+ام به او 
+<span class="mat" dir="ltr"><em>k<sub>i</sub></em></span>
+تقاطع می‌دهد و از او جمع فاصله‌ی دوبه‌دو تقاطع‌هارا می‌خواهد.
+</p><p>
+آقا پارسا کمی مریض‌احوال است و فرصت نمی‌کند که پاسخ سوالات پویان را 
+بدهد، از آنجا که پویان شهردار است و رفاه مردم امری بسیار ضروریست شما 
+به‌جای آقا پارسا پاسخ سوالات او را بدهید.
+</p>
+
+</div>
+<h2>ورودی</h2>
+<div class="part">
+<p>در خط اول دو عدد 
+<span class="math" dir="ltr"><em>n</em></span>
+و
+<span class="math" dir="ltr"><em>q</em></span> 
+آمده است که به ترتیب بیانگر تعداد تقاطع‌های شهر و تعداد سوالات پویان است.</p>
+<p>
+در هر یک از
+<span class="mat" dir="ltr"><em>n-1</em></span>
+ خط بعد سه عدد  
+<span class="mat" dir="ltr"><em>u</em></span>
+و
+<span class="mat" dir="ltr"><em>v</em></span>
+و
+<span class="mat" dir="ltr"><em>w</em></span>
+آمده‌است که یعنی خیابانی به طول 
+<span class="math" dir="ltr"><em>w</em></span>
+بین دو تقاطع 
+<span class="math" dir="ltr"><em>u</em></span>
+و
+<span class="math" dir="ltr"><em>v</em></span>
+وجود دارد.
+</p>
+<p>
+در 
+<span class="mat" dir="ltr"><em>2q</em></span>
+خط بعد به ازای هر پرسش پویان، دو خط آمده است که در خط اول عدد  
+<span class="mat" dir="ltr"><em>k<sub>i</sub></em></span>
+آمده‌است که تعداد تقاطع‌های این پرسش است و در خط بعد شماره
+<span class="mat" dir="ltr"><em>k<sub>i</sub></em></span>
+تقاطع آمده‌است.
+
+</p><ul>
+<li><span class="math" dir="ltr">2 ≤ <em>n</em>, <em>q</em> ≤ 10<sup>5</sup></span></li>
+<li><span class="math" dir="ltr">1 ≤ <em>k<sub>1</sub> + k<sub>2</sub> + ... + k<sub>n</sub></em> ≤ 10<sup>6</sup></span></li>
+<li>طول هر جاده حداکثر 1000 است</li>
+</ul>
+
+</div>
+<h2>خروجی</h2>
+<div class="part">
+<p> 
+<span class="mat" dir="ltr"><em>m</em></span>
+خط در خروجی چاپ کنید که خط 
+<span class="mat" dir="ltr"><em>i</em></span>
+پاسخ پرسش 
+<span class="mat" dir="ltr"><em>i</em></span>
+ام است.
+</p></div>
+
+<table class="sample-data" cellspacing="10px">
+	<tbody><tr>
+		<th>ورودی نمونه</th>
+		<th>خروجی نمونه</th>
+	</tr>
+	
+	<tr>
+		<td><pre dir="ltr">4 2
+1 2 1 
+2 3 2
+1 4 1
+2
+1 3 
+3
+2 3 4
+</pre></td>
+		<td><pre dir="ltr">3
+8
+</pre></td>
+	</tr>
+	
+	
+	
+	
+</tbody></table>
+
+<div class="part">
+	
+
+</div>
+
+
+
+
+
+
+</body></html>

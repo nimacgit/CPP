@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1399615141 source:d:\programming\c++\codeblock\hellinet\a4\main.cpp
+	<iostream>
+	<Vector>
+	<string>
+
